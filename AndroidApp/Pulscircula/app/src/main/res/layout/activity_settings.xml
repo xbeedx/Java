@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_bg"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_arrow"
+        android:contentDescription="@string/TextContentBackArrow"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/TVReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/main_font"
+        android:text="@string/TextSettings"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/backArrow"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/TVReport"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_weight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.5"
+                android:text="@string/TextWeight"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/TVSettingsWeight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.1"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="end"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:text=""
+                android:textColor="#FFFFFF"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:fontFamily="@font/main_font"
+                android:text="kg"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck, HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.5"
+                android:text="@string/TextHeight"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/ETSettingsHeight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.1"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="end"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text=""
+                android:textColor="#FFFFFF"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:fontFamily="@font/main_font"
+                android:text="cm"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck,HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_bell" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.5"
+                android:text="@string/TextNotifications"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck" />
+
+            <Spinner
+                android:id="@+id/SpinnerNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:gravity="end"
+                android:spinnerMode="dropdown"
+                android:contentDescription="@string/TextContentNotifications"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_privacy_policy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/TextPrivacyPolicy"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:text="@string/TextLogOut"
+        android:fontFamily="@font/main_font"
+        android:textColor="#898989"
+        android:textAllCaps="false"
+        android:onClick="LogOut" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

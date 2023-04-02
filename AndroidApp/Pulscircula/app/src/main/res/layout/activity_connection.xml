@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectionActivity">
+
+    <ImageView
+        android:id="@+id/BGConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waves_bg"
+        android:contentDescription="@string/TextContentConnection"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_arrow"
+        android:contentDescription="@string/TextContentBackArrow"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/IconConnection"
+        android:onClick="supervisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:background="@drawable/icon_user"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/ETEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        android:contentDescription="@string/TextContentUserIcon"/>
+
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="101dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/main_font"
+        android:hint="@string/TextEmailFull"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="1dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IconConnection"
+        tools:ignore="TextContrastCheck" />
+
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/main_font"
+        android:hint="@string/TextPassword"
+        android:inputType="textPassword"
+        android:paddingBottom="1dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETEmail"
+        tools:ignore="TextContrastCheck"
+        android:importantForAutofill="no" />
+
+
+    <Button
+        android:id="@+id/ButtonConnection"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/TextNext"
+        android:textColor="#838383"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ETPassword"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/TVPasswordForgotten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:fontFamily="@font/main_font"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/TextPasswordForgotten"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ButtonConnection" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

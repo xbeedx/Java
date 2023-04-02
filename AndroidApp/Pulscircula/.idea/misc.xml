@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/boutton_acces.xml" value="0.20592105263157895" />
+        <entry key="app/src/main/res/drawable/boutton_acces_rouge.xml" value="0.20592105263157895" />
+        <entry key="app/src/main/res/drawable/emplacement_edit_text.xml" value="0.20592105263157895" />
+        <entry key="app/src/main/res/layout-v28/activity_home_page.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/a_layout_file.xml" value="0.10592105263157894" />
+        <entry key="app/src/main/res/layout/activity_alarm.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_blessure.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_connection.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_connexion.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.34175207359125426" />
+        <entry key="app/src/main/res/layout/activity_injury.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/activity_inscription.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_inscription_suite.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.26142672263665107" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.24568965517241378" />
+        <entry key="app/src/main/res/layout/activity_registration_following.xml" value="0.2192188723326232" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_superviseur.xml" value="0.23271587902079666" />
+        <entry key="app/src/main/res/layout/activity_supervisor.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/activity_user.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/activity_user_check.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_user_page.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_utilisateur.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/main.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/popwindow.xml" value="0.11973684210526316" />
+        <entry key="app/src/main/res/layout/rectanglebg.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/row_items.xml" value="0.16611842105263158" />
+        <entry key="app/src/main/res/layout/row_rapports.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/simple_list_item_1.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/layout/spinner_color.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.19572368421052633" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20592105263157895" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20592105263157895" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

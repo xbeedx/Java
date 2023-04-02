@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/BGConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waves_bg"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        android:contentDescription="@string/TextContentRegistrationPage"/>
+
+    <ImageView
+        android:id="@+id/IconConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:background="@drawable/icon_user"
+        android:contentDescription="@string/TextContentUserIcon"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/ETFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/ETFirstName"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/main_font"
+        android:hint="@string/TextFirstName"
+        android:inputType="textPersonName"
+        android:paddingBottom="1dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/ETLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IconConnection"
+        tools:ignore="TextContrastCheck"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/ETLastName"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/main_font"
+        android:hint="@string/TextLastName"
+        android:inputType="textPersonName"
+        android:paddingBottom="1dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETFirstName"
+        android:importantForAutofill="no"
+        tools:ignore="TextContrastCheck" />
+
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/main_font"
+        android:hint="@string/TextEmailShort"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="1dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETLastName"
+        tools:ignore="TextContrastCheck" />
+
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/main_font"
+        android:hint="@string/TextPassword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingBottom="1dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/ButtonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETEmail"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/ButtonNext"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/main_font"
+        android:onClick="onClick"
+        android:text="@string/TextNext"
+        android:textAllCaps="false"
+        android:textColor="#838383"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ETPassword"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/ButtonConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="@font/main_font"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/TextConnection"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ButtonNext"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

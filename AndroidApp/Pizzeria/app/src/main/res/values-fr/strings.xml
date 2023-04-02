@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pizzeria</string>
+    <string name="pizza1">NAPOLITAINE </string>
+    <string name="pizza2">ROYALE </string>
+    <string name="pizza3">QUATRE FROMAGES </string>
+    <string name="pizza4">MONTAGNARDE </string>
+    <string name="pizza5">RACLETTE </string>
+    <string name="pizza6">HAWAI </string>
+    <string name="pizza7">PANNA COTTA </string>
+    <string name="pizza8">TIRAMISU </string>
+
+</resources>

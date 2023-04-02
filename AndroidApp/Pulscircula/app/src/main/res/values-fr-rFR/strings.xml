@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pulscircula</string>
+    <string-array name="notificationsState">
+        <item>Activé</item>
+        <item>Desactivé</item>
+    </string-array>
+    <string name="textInjury1">UNE BLESSURE</string>
+    <string name="textInjury2">À SIGNALER ?</string>
+    <string name="textReport">SIGNALEMENT</string>
+    <string name="textLocation">EMPLACEMENT</string>
+    <string name="textDetails">DÉTAILS</string>
+    <string name="TextNext">Suivant</string>
+    <string name="TextEmailFull">Adresse mail</string>
+    <string name="TextPassword">Mot de passe</string>
+    <string name="TextFirstName">Prénom</string>
+    <string name="TextEmailShort">Email</string>
+    <string name="TextLastName">Nom</string>
+    <string name="TextPasswordForgotten">mot de passe oublié</string>
+    <string name="TextSteps">pas</string>
+    <string name="TextCorrectSteps">pas corrects</string>
+    <string name="TextPBGoals">de l\'objectif</string>
+    <string name="TextConnection">connexion</string>
+    <string name="TextRegister">Inscription</string>
+    <string name="TextHeight">Taille</string>
+    <string name="TextWeight">Poids</string>
+    <string name="TextDateOfBirth">Date de naissance</string>
+    <string name="TextSettings">PARAMÉTRES</string>
+    <string name="TextNotifications">Rappels</string>
+    <string name="TextPrivacyPolicy">Politique de confidentialité</string>
+    <string name="TextLogOut">Déconnexion</string>
+    <string name="TextButtonEdit">Editer le profil</string>
+    <string name="TextButtonSave">Enregistrer</string>
+    <string name="TextEnabled">Activé</string>
+    <string name="TextDisabled">Desactivé</string>
+    <string name="TextYears">ans</string>
+    <string name="TextReadRequest">Demande de lecture</string>
+    <string name="TextStepDistance">distance par pas</string>
+    <string name="TextState">Etat</string>
+    <string name="TextMotion">Mouvement</string>
+    <string name="TextReports">Rapports</string>
+    <string name="TextStopReading">Arreter la lecture</string>
+    <string name="TextM01">Janvier</string>
+    <string name="TextM02">Fevrier</string>
+    <string name="TextM03">Mars</string>
+    <string name="TextM04">Avril</string>
+    <string name="TextM05">Mai</string>
+    <string name="TextM06">Juin</string>
+    <string name="TextM07">Juillet</string>
+    <string name="TextM08">Aout</string>
+    <string name="TextM09">Septembre</string>
+    <string name="TextM10">Octobre</string>
+    <string name="TextM11">Novembre</string>
+    <string name="TextM12">Decembre</string>
+    <string name="TextD1">Lundi</string>
+    <string name="TextD2">Mardi</string>
+    <string name="TextD3">Mercredi</string>
+    <string name="TextD4">Jeudi</string>
+    <string name="TextD5">Vendredi</string>
+    <string name="TextD6">Samedi</string>
+    <string name="TextD7">Dimanche</string>
+    <string name="TextQuestionAccess">Autorisez vous l\'accés vos informations ?</string>
+    <string name="TextYes">Oui</string>
+    <string name="TextNo">Non</string>
+    <string name="TextNoCounterSensor">capteur de pas introuvable</string>
+    <string name="TextNoAccelerometer">accelerométre introuvable</string>
+    <string name="TextCheckMails">Vérifiez vos mails</string>
+    <string name="TextWrongEP">Email ou mot de passe incorrect</string>
+    <string name="TextRecoveryEmail">email de récupération énvoyé</string>
+    <string name="TextEmailUnknown">adresse mail inconnue</string>
+    <string name="TextVerificationEmail">Email de vérification envoyé</string>
+    <string name="TextRequestAcc">Demande acceptée</string>
+    <string name="TextRequestDec">Demande refusée</string>
+    <string name="TextErrorShortPassword">Mot de passe trop court: 6 caractères minimum</string>
+    <string name="TextAlarmWalk">Il est l\'heure de marcher</string>
+    <string name="TextWalkingTime">IL EST L\'HEURE DE MARCHER</string>
+    <string name="TextWalkAlarm1">Prenez le temps de marcher</string>
+    <string name="TextWalkAlarm2">14 pas suffisent à oxygéner \n l\'ensemble de votre corps</string>
+
+    <string name="TextContentDetails">Entrez les détails de votre blessure</string>
+    <string name="TextContentLocation">Entrez l\'emplacement de votre blessure</string>
+    <string name="TextContentClose">Fermer la fenêtre</string>
+    <string name="TextContentPlaster">Image d\'un pansement</string>
+    <string name="TextContentInjuryReport">Page de signalement d\'une blessure</string>
+    <string name="TextContentConnection">Page de connexion</string>
+    <string name="TextContentBackArrow">Retourner à la page précedente</string>
+    <string name="TextContentUserIcon">icone utilisateur</string>
+    <string name="TextContentHomePage">Page d\'acceuil</string>
+    <string name="TextContentUserPage">Page de profil</string>
+    <string name="TextContentRegistrationPage">Page d\'inscription</string>
+    <string name="TextContentFollowingRegistrationPage">Page d\'inscription suivante</string>
+    <string name="TextContentLogo">logo Pulscircula</string>
+    <string name="TextContentReportsButton">voir les rapports</string>
+    <string name="TextContentHPButton">aller à la page d\'acceuil</string>
+    <string name="TextContentUPButton">aller à la page utilsateur</string>
+    <string name="TextContentGenderM">Selection du Genre Masculin  </string>
+    <string name="TextContentGenderF">Selection du Genre Feminin </string>
+    <string name="TextContentNotifications">seletion de l\'état des notifications</string>
+    <string name="TextContentSupervisor">Page superviseur</string>
+    <string name="TextContentUserCheckPage">Page de surveillance utilisateur</string>
+    <string name="TextContentEye">Afficher le mot de passe</string>
+    <string name="TextContentGear">Aller à la page de paramétres</string>
+    <string name="TextContentPadlock">icon cadenaas</string>
+    <string name="TextContentEnvelope">icon enveloppe</string>
+    <string name="TextContentCalendar">icon calendrier</string>
+    <string name="TextContentAccessState">Etat de l\'acces</string>
+    <string name="TextContentAlarmPage">Page alarme</string>
+
+
+
+
+</resources>

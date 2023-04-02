@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1091492489280",
+    "project_id": "pulscircula-4a6fc",
+    "storage_bucket": "pulscircula-4a6fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091492489280:android:209a6171f552098afdd7a5",
+        "android_client_info": {
+          "package_name": "fr.beed.pulscircula"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091492489280-5rs4d7sg71fvskjapqnkbvm3dp31c573.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.beed.pulscircula",
+            "certificate_hash": "634328cb0a750e6118cc68dab809d46676a37e7d"
+          }
+        },
+        {
+          "client_id": "1091492489280-ta2podhqhdt3i25tdrdjd7n1hfn5qqvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmpEtXiSUrQTwfGpUx3Q23fUYSvbj1KeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091492489280-ta2podhqhdt3i25tdrdjd7n1hfn5qqvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

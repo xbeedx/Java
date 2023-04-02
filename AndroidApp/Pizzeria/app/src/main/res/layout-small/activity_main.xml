@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <Button
+        android:id="@+id/napolitaine"
+        android:textSize="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/royale"
+        app:layout_constraintBottom_toTopOf="@+id/QuatreFromages"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/royale"
+        android:textSize="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza2"
+        app:layout_constraintStart_toEndOf="@+id/napolitaine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/QuatreFromages"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/QuatreFromages"
+        android:textSize="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/royale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/montagnarde"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/montagnarde"
+        android:textSize="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuatreFromages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/raclette"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/raclette"
+        android:textSize="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/montagnarde"
+        app:layout_constraintEnd_toStartOf="@+id/hawai"
+        app:layout_constraintBottom_toTopOf="@+id/pannacota"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/hawai"
+        android:textSize="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza6"
+        app:layout_constraintBottom_toTopOf="@+id/tiramisu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/raclette"
+        app:layout_constraintTop_toBottomOf="@+id/montagnarde"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/pannacota"
+        android:textSize="7dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tiramisu"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hawai"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/tiramisu"
+        android:textSize="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/pizza8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/pannacota"
+        app:layout_constraintTop_toBottomOf="@+id/hawai"
+        app:layout_constraintVertical_weight="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

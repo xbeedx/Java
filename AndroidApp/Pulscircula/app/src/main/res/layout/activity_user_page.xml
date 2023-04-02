@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fond_user"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/TextContentUserPage"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/param_tres"
+        android:onClick="goToSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/TextContentGear"/>
+
+    <ImageView
+        android:id="@+id/IconConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/icon_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/TextContentUserIcon"/>
+
+    <LinearLayout
+        android:id="@+id/UserData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/IconConnection"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_black_icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/TextContentUserIcon"/>
+
+            <EditText
+                android:id="@+id/ETFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#000000"
+                android:focusable="false"
+                android:fontFamily="@font/main_font"
+                android:inputType="text"
+                android:textAlignment="center"
+                tools:ignore="SpeakableTextPresentCheck, LabelFor"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calendar_icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/TextContentCalendar"/>
+
+            <EditText
+                android:id="@+id/ETAge"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#000000"
+                android:focusable="false"
+                android:inputType="date"
+                android:textAlignment="center"
+                tools:ignore="SpeakableTextPresentCheck, LabelFor"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/envelope_icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/TextContentEnvelope"/>
+
+            <EditText
+                android:id="@+id/ETEmail_user"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#000000"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck, LabelFor"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".08"
+                android:background="@drawable/padlock_icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/TextContentPadlock"/>
+
+            <EditText
+                android:id="@+id/ETPassword_user"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight=".80"
+                android:backgroundTint="#000000"
+                android:focusable="false"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                tools:ignore="SpeakableTextPresentCheck, LabelFor"
+                android:importantForAutofill="no" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".07"
+                android:background="@drawable/hidden_eye_icon"
+                android:onClick="seePassword"
+                tools:ignore="TouchTargetSizeCheck"
+                android:contentDescription="@string/TextContentEye"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/UserData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:onClick="Edit">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_icon"
+            tools:ignore="contentDescription"/>
+
+        <TextView
+            android:id="@+id/ButtonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/main_font"
+            android:text="@string/TextButtonEdit"
+            android:textColor="#4E342E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/NavBar"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/grey_reports_icon"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:onClick="goToHomePage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/grey_homepage_icon"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/black_userpage_icon"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
